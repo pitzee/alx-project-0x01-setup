@@ -65,9 +65,8 @@ export interface UserData {
   };
 }
 
-// 2. UserModalProps Interface
 export interface UserModalProps {
   isOpen: boolean;
   onClose: () => void;
-  onSubmit?: (user: UserData) => void;
+  onSubmit: (post: UserProps) => void;
 }
